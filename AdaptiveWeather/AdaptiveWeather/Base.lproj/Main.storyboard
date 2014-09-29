@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -19,10 +20,39 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="yfP-b6-e21">
                                 <rect key="frame" x="150" y="20" width="300" height="197"/>
+                                <variation key="heightClass=compact" misplaced="YES">
+                                    <rect key="frame" x="150" y="20" width="300" height="160"/>
+                                </variation>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zze-MY-PW0" userLabel="TextContainer">
                                 <rect key="frame" x="0.0" y="237" width="600" height="363"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cupertino" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Dw-8D-o4X">
+                                        <rect key="frame" x="-7" y="10" width="614" height="177"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="150"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEk-hp-HdT">
+                                        <rect key="frame" x="73" y="58" width="454" height="295"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="250"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="73" y="-105" width="454" height="295"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="0.21568627450980393" green="0.50196078431372548" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="DEk-hp-HdT" secondAttribute="bottom" constant="10" id="PEg-QT-yzL"/>
+                                    <constraint firstAttribute="centerX" secondItem="3Dw-8D-o4X" secondAttribute="centerX" id="Wfz-Wa-IOb"/>
+                                    <constraint firstItem="3Dw-8D-o4X" firstAttribute="top" secondItem="Zze-MY-PW0" secondAttribute="top" constant="10" id="nQY-MH-5Tg"/>
+                                    <constraint firstAttribute="centerX" secondItem="DEk-hp-HdT" secondAttribute="centerX" id="vIy-uh-2SA"/>
+                                </constraints>
+                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="200" width="600" height="200"/>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.29019607843137252" green="0.6705882352941176" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
@@ -33,8 +63,29 @@
                             <constraint firstItem="yfP-b6-e21" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="STA-zZ-SS8"/>
                             <constraint firstItem="Zze-MY-PW0" firstAttribute="top" secondItem="yfP-b6-e21" secondAttribute="bottom" constant="20" id="TJt-dD-qwe"/>
                             <constraint firstItem="yfP-b6-e21" firstAttribute="height" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="ane-Mn-JoJ"/>
+                            <constraint firstAttribute="width" secondItem="yfP-b6-e21" secondAttribute="width" multiplier="0.45" id="oIk-DX-FVW"/>
+                            <constraint firstItem="yfP-b6-e21" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="ofs-2A-hc6"/>
                             <constraint firstAttribute="centerX" secondItem="yfP-b6-e21" secondAttribute="centerX" id="ySz-Fl-C4m"/>
+                            <constraint firstAttribute="centerY" secondItem="yfP-b6-e21" secondAttribute="centerY" id="z4O-G4-1bp"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="oIk-DX-FVW"/>
+                                <exclude reference="ofs-2A-hc6"/>
+                                <exclude reference="z4O-G4-1bp"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="STA-zZ-SS8"/>
+                                <exclude reference="ane-Mn-JoJ"/>
+                                <include reference="oIk-DX-FVW"/>
+                                <include reference="ofs-2A-hc6"/>
+                                <exclude reference="ySz-Fl-C4m"/>
+                                <include reference="z4O-G4-1bp"/>
+                                <exclude reference="TJt-dD-qwe"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
