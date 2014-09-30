@@ -24,31 +24,23 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zze-MY-PW0" userLabel="TextContainer">
                                 <rect key="frame" x="0.0" y="237" width="600" height="363"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Cupertino" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3Dw-8D-o4X">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cupertino" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Dw-8D-o4X">
                                         <rect key="frame" x="-7" y="10" width="614" height="177"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="150"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="widthClass=compact">
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="90"/>
-                                        </variation>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="28C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="DEk-hp-HdT">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEk-hp-HdT">
                                         <rect key="frame" x="73" y="58" width="454" height="295"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="250"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="widthClass=compact">
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="150"/>
-                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.21568627450980393" green="0.50196078431372548" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="DEk-hp-HdT" secondAttribute="bottom" constant="10" id="PEg-QT-yzL"/>
-                                    <constraint firstItem="3Dw-8D-o4X" firstAttribute="width" secondItem="Zze-MY-PW0" secondAttribute="width" id="REG-zf-0XS"/>
                                     <constraint firstAttribute="centerX" secondItem="3Dw-8D-o4X" secondAttribute="centerX" id="Wfz-Wa-IOb"/>
-                                    <constraint firstItem="DEk-hp-HdT" firstAttribute="width" secondItem="Zze-MY-PW0" secondAttribute="width" id="fve-6G-dII"/>
                                     <constraint firstItem="3Dw-8D-o4X" firstAttribute="top" secondItem="Zze-MY-PW0" secondAttribute="top" constant="10" id="nQY-MH-5Tg"/>
                                     <constraint firstAttribute="centerX" secondItem="DEk-hp-HdT" secondAttribute="centerX" id="vIy-uh-2SA"/>
                                 </constraints>
@@ -64,9 +56,7 @@
                             <constraint firstItem="Zze-MY-PW0" firstAttribute="top" secondItem="yfP-b6-e21" secondAttribute="bottom" constant="20" id="TJt-dD-qwe"/>
                             <constraint firstItem="yfP-b6-e21" firstAttribute="height" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="ane-Mn-JoJ"/>
                             <constraint firstItem="yfP-b6-e21" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.45" id="oIk-DX-FVW"/>
-                            <constraint firstItem="yfP-b6-e21" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="ofs-2A-hc6">
-                                <variation key="heightClass=compact" constant="0.0"/>
-                            </constraint>
+                            <constraint firstItem="yfP-b6-e21" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="ofs-2A-hc6"/>
                             <constraint firstItem="Zze-MY-PW0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="180" id="uIN-Tk-Bl9">
                                 <variation key="heightClass=compact" constant="0.0"/>
                             </constraint>
@@ -100,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="120" y="348"/>
+            <point key="canvasLocation" x="398" y="379"/>
         </scene>
     </scenes>
     <resources>

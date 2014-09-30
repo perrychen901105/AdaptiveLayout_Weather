@@ -1,29 +1,19 @@
 {
   "images" : [
     {
-      "idiom" : "iphone",
+      "idiom" : "universal",
       "scale" : "1x",
       "filename" : "cloud_small.png"
     },
     {
-      "idiom" : "iphone",
+      "idiom" : "universal",
       "scale" : "2x",
       "filename" : "cloud_small@2x.png"
     },
     {
-      "idiom" : "iphone",
+      "idiom" : "universal",
       "scale" : "3x",
       "filename" : "cloud_small@3x.png"
-    },
-    {
-      "idiom" : "ipad",
-      "scale" : "1x",
-      "filename" : "cloud_big.png"
-    },
-    {
-      "idiom" : "ipad",
-      "scale" : "2x",
-      "filename" : "cloud_big@2x.png"
     }
   ],
   "info" : {
